@@ -16,5 +16,5 @@ if (!$db) {
  
 $result = pg_query($db, "SELECT statement goes here");
 echo "HI DB BABY";
-echo $result;
+
 ?>
