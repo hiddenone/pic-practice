@@ -16,9 +16,10 @@ echo 'Thank you for your input.  We will get back to you ASAP. <a href="index.ht
  
  $from = "The Sender <glennholt1@gmail.com>";
 $to = "Receiver <glennholt1@gmail.com>";
- $subject = "Hi!";
+// $subject = "Hi!";
  $body = "Hi,\n\nHow are you?";
- 
+ $body = $msg;
+ echo $msg;
  $host = "smtp.gmail.com";
  $port = "587";
  $username = "glennholt1@gmail.com";
