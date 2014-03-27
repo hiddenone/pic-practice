@@ -1,15 +1,19 @@
 <?php
  require_once "Mail.php";
  
- $from = "Sandra Sender <sender@example.com>";
- $to = "Ramona Recipient <recipient@example.com>";
+ $from = "The Sender <glennholt1@.com>";
+ $to = "Receiver <glennholt1@gmail.com>";
  $subject = "Hi!";
  $body = "Hi,\n\nHow are you?";
  
- $host = "ssl://mail.example.com";
- $port = "465";
+ $host = "smtp.gmail.com";
+ $port = "587";
  $username = "glennholt1@gmail.com";
  $password = "***REMOVED***";
+ 
+
+ 
+ 
  
  $headers = array ('From' => $from,
    'To' => $to,
