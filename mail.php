@@ -7,14 +7,14 @@ $mail->CharSet="UTF-8";
 $mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
-$mail->Username = 'glennholt1@gmail.com';
+$mail->Username = 'MyUsername@gmail.com';
 $mail->Password = 'valid password';
 $mail->SMTPAuth = true;
 
-$mail->From = 'glennholt1@gmail.com';
-$mail->FromName = 'Glenn Holt';
-$mail->AddAddress('glennholt1@gmail.com');
-$mail->AddReplyTo('glennholt1@gmail.com', 'Information');
+$mail->From = 'MyUsername@gmail.com';
+$mail->FromName = 'Mohammad Masoudian';
+$mail->AddAddress('anotherValidGmail@gmail.com');
+$mail->AddReplyTo('phoenixd110@gmail.com', 'Information');
 
 $mail->IsHTML(true);
 $mail->Subject    = "PHPMailer Test Subject via Sendmail, basic";
