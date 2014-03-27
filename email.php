@@ -14,10 +14,10 @@ $to = 'michaelholt0604@gmail.com';
 echo 'Thank you for your input.  We will get back to you ASAP. <a href="index.html">Go back to the home page</a>';
 
  
- //$from = "The Sender <glennholt1@gmail.com>";
-// $to = "Receiver <glennholt1@gmail.com>";
- // $subject = "Hi!";
- $body = $message;
+ $from = "The Sender <glennholt1@gmail.com>";
+$to = "Receiver <glennholt1@gmail.com>";
+ $subject = "Hi!";
+ $body = "Hi,\n\nHow are you?";
  
  $host = "smtp.gmail.com";
  $port = "587";
