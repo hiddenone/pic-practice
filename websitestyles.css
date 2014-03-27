@@ -1,0 +1,77 @@
+a.one{
+position:absolute;
+left:25px;
+}
+a.two{
+position:absolute;
+left:100px;
+}
+a.three{
+position:absolute;
+left:1135px;
+}
+a.four{
+position:absolute;
+left:1210px;
+}
+div.aboutus{
+background-color:purple;
+position:absolute;
+left:0px;
+height:140px;
+width:625px;
+margin:0px 10px;
+padding:0px;
+border: 2px solid;
+text-align:left;
+overflow:scroll;
+}
+div.why{
+background-color:darkorange;
+position:absolute;
+left:635px;
+height:140px;
+width:625px;
+margin:0px 10px;
+padding:0px;
+border: 2px solid;
+text-align:left;
+overflow:scroll;
+}
+div.input{
+background-color:blue;
+position:absolute;
+left:840px;
+height:140px;
+width:420px;
+margin:0px 10px;
+padding:0px;
+border: 2px solid;
+display:-webkit-box;
+-webkit-box-orient:horizontal;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+}
+div.textarea{
+background-color:green;
+position:absolute;
+left:430px;
+height:140px;
+width:420px;
+padding: 0px;
+border: 2px solid;
+display:-webkit-box;
+-webkit-box-orient:horizontal;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+}
+div.ourcontact{
+background-color:red;
+position:absolute;
+left:20px;
+height:140px;
+width:430px;
+padding:0px;
+border: 2px solid;
+display:block;
+}

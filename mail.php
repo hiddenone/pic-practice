@@ -1,12 +1,17 @@
 <?php
 require_once('class.phpmailer.php');
 
+
+
+
+
+
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->CharSet="UTF-8";
 $mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
+$mail->Port = 465;
 $mail->Username = 'MyUsername@gmail.com';
 $mail->Password = 'valid password';
 $mail->SMTPAuth = true;

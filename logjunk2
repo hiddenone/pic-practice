@@ -1,0 +1,102 @@
+2014-03-27T22:22:55.064440+00:00 app[web.1]: Did not download optional dependencies: pear/Net_SMTP, use --alldeps to download automatically
+2014-03-27T22:22:56.657429+00:00 app[web.1]: pear/Mail can optionally use package "pear/Net_SMTP" (version >= 1.4.1)
+2014-03-27T22:22:56.857170+00:00 app[web.1]: downloading Mail-1.2.0.tar ...
+2014-03-27T22:22:56.857446+00:00 app[web.1]: Starting to download Mail-1.2.0.tar (Unknown size)
+2014-03-27T22:22:57.335222+00:00 app[web.1]: ..........................done: 119,296 bytes
+2014-03-27T22:22:57.624160+00:00 app[web.1]: install ok: channel://pear.php.net/Mail-1.2.0
+2014-03-27T22:22:57.947795+00:00 app[web.1]: WARNING: channel "pear.php.net" has updated its protocols, use "pear channel-update pear.php.net" to update
+2014-03-27T22:22:59.618330+00:00 app[web.1]: WARNING: "pear/Auth_SASL" is deprecated in favor of "pear/Auth_SASL2"
+2014-03-27T22:22:59.618518+00:00 app[web.1]: Did not download optional dependencies: pear/Auth_SASL, use --alldeps to download automatically
+2014-03-27T22:22:59.659822+00:00 app[web.1]: pear/Net_SMTP can optionally use package "pear/Auth_SASL" (version >= 1.0.5)
+2014-03-27T22:22:59.862668+00:00 app[web.1]: downloading Net_SMTP-1.6.2.tar ...
+2014-03-27T22:22:59.863002+00:00 app[web.1]: Starting to download Net_SMTP-1.6.2.tar (Unknown size)
+2014-03-27T22:23:00.191629+00:00 app[web.1]: ................done: 65,536 bytes
+2014-03-27T22:23:00.408801+00:00 app[web.1]: downloading Net_Socket-1.0.14.tar ...
+2014-03-27T22:23:00.408925+00:00 app[web.1]: Starting to download Net_Socket-1.0.14.tar (Unknown size)
+2014-03-27T22:23:00.571428+00:00 app[web.1]: ........done: 24,576 bytes
+2014-03-27T22:23:00.779921+00:00 app[web.1]: install ok: channel://pear.php.net/Net_Socket-1.0.14
+2014-03-27T22:23:00.981488+00:00 app[web.1]: Launching apache
+2014-03-27T22:23:00.894616+00:00 app[web.1]: install ok: channel://pear.php.net/Net_SMTP-1.6.2
+2014-03-27T22:23:01.372738+00:00 heroku[web.1]: State changed from starting to up
+2014-03-27T22:23:01.790896+00:00 app[web.1]: [Thu Mar 27 22:23:01 2014] [notice] Apache/2.2.22 (Unix) PHP/5.3.10 configured -- resuming normal operations
+2014-03-27T22:23:02.791190+00:00 app[web.1]: [Thu Mar 27 22:23:02 2014] [error] server reached MaxClients setting, consider raising the MaxClients setting
+2014-03-27T22:23:40.840945+00:00 app[web.1]: 10.228.27.161 - - [27/Mar/2014:22:23:40 +0000] "GET / HTTP/1.1" 200 183
+2014-03-27T22:23:40.578504+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=71a6c71b-d631-4d57-9cf0-6c532fe92fdd fwd="108.226.162.112" dyno=web.1 connect=3ms service=25ms status=200 bytes=371
+2014-03-27T22:28:40.940832+00:00 app[web.1]: 10.123.49.156 - - [27/Mar/2014:22:28:40 +0000] "GET / HTTP/1.1" 200 183
+2014-03-27T22:28:40.494940+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=397a56b8-3ec3-4b7c-abbe-413a1a8b1c46 fwd="108.226.162.112" dyno=web.1 connect=1ms service=10ms status=200 bytes=371
+2014-03-27T22:28:44.941281+00:00 app[web.1]: 10.42.102.144 - - [27/Mar/2014:22:28:44 +0000] "GET / HTTP/1.1" 200 183
+2014-03-27T22:28:56.200516+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=078cb3a9-7af4-4466-b24d-490b0ad7b6c0 fwd="108.226.162.112" dyno=web.1 connect=1ms service=5ms status=200 bytes=371
+2014-03-27T22:28:56.942304+00:00 app[web.1]: 10.92.239.143 - - [27/Mar/2014:22:28:56 +0000] "GET / HTTP/1.1" 200 183
+2014-03-27T22:29:00.318931+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=fa2bb554-33a0-4dde-8745-c133b716545b fwd="108.226.162.112" dyno=web.1 connect=1ms service=8ms status=200 bytes=371
+2014-03-27T22:29:00.942708+00:00 app[web.1]: 10.120.198.130 - - [27/Mar/2014:22:29:00 +0000] "GET / HTTP/1.1" 200 183
+2014-03-27T22:29:55+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-27T22:30:00+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-27T22:30:00.865931+00:00 heroku[web.1]: State changed from up to starting
+2014-03-27T22:30:00.630548+00:00 heroku[api]: Deploy 646bcd8 by glennholt1@gmail.com
+2014-03-27T22:30:00.630631+00:00 heroku[api]: Release v16 created by glennholt1@gmail.com
+2014-03-27T22:30:03.114314+00:00 heroku[web.1]: Starting process with command `sh boot.sh`
+2014-03-27T22:30:04.950849+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-27T22:30:05.932442+00:00 app[web.1]: WARNING: channel "pear.php.net" has updated its protocols, use "pear channel-update pear.php.net" to update
+2014-03-27T22:30:06.764478+00:00 app[web.1]: Did not download optional dependencies: pear/Net_SMTP, use --alldeps to download automatically
+2014-03-27T22:30:07.151734+00:00 heroku[web.1]: Process exited with status 0
+2014-03-27T22:30:07.674924+00:00 app[web.1]: pear/Mail can optionally use package "pear/Net_SMTP" (version >= 1.4.1)
+2014-03-27T22:30:07.867982+00:00 app[web.1]: downloading Mail-1.2.0.tar ...
+2014-03-27T22:30:07.868222+00:00 app[web.1]: Starting to download Mail-1.2.0.tar (Unknown size)
+2014-03-27T22:30:08.328233+00:00 app[web.1]: ..........................done: 119,296 bytes
+2014-03-27T22:30:08.399227+00:00 app[web.1]: install ok: channel://pear.php.net/Mail-1.2.0
+2014-03-27T22:30:08.838291+00:00 app[web.1]: WARNING: channel "pear.php.net" has updated its protoco
+ls, use "pear channel-update pear.php.net" to update
+2014-03-27T22:30:10.468623+00:00 app[web.1]: WARNING: "pear/Auth_SASL" is deprecated in favor of "pear/Auth_SASL2"
+2014-03-27T22:30:10.468840+00:00 app[web.1]: Did not download optional dependencies: pear/Auth_SASL, use --alldeps to download automatically
+2014-03-27T22:30:10.515631+00:00 app[web.1]: pear/Net_SMTP can optionally use package "pear/Auth_SASL" (version >= 1.0.5)
+2014-03-27T22:30:10.724595+00:00 app[web.1]: downloading Net_SMTP-1.6.2.tar ...
+2014-03-27T22:30:10.724882+00:00 app[web.1]: Starting to download Net_SMTP-1.6.2.tar (Unknown size)
+2014-03-27T22:30:11.026260+00:00 app[web.1]: ................done: 65,536 bytes
+2014-03-27T22:30:11.249963+00:00 app[web.1]: Starting to download Net_Socket-1.0.14.tar (Unknown size)
+2014-03-27T22:30:11.403406+00:00 app[web.1]: ........done: 24,576 bytes
+2014-03-27T22:30:11.249803+00:00 app[web.1]: downloading Net_Socket-1.0.14.tar ...
+2014-03-27T22:30:11.439288+00:00 app[web.1]: install ok: channel://pear.php.net/Net_Socket-1.0.14
+2014-03-27T22:30:11.470506+00:00 app[web.1]: install ok: channel://pear.php.net/Net_SMTP-1.6.2
+2014-03-27T22:30:11.494507+00:00 app[web.1]: Launching apache
+2014-03-27T22:30:12.470880+00:00 app[web.1]: [Thu Mar 27 22:30:11 2014] [notice] Apache/2.2.22 (Unix) PHP/5.3.10 configured -- resuming normal operations
+2014-03-27T22:30:13.470939+00:00 app[web.1]: [Thu Mar 27 22:30:12 2014] [error] server reached MaxClients setting, consider raising the MaxClients setting
+2014-03-27T22:30:12.032108+00:00 heroku[web.1]: State changed from starting to up
+2014-03-27T22:30:18.062974+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=09323233-8d4f-4948-920d-35be1932762a fwd="108.226.162.112" dyno=web.1 connect=1ms service=4442ms status=200 bytes=789
+2014-03-27T22:30:18.443499+00:00 app[web.1]: 10.92.239.143 - - [27/Mar/2014:22:30:13 +0000] "GET / HTTP/1.1" 200 601
+2014-03-27T22:28:44.833498+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=5a665436-bbca-4df6-852e-f9bd1f72e668 fwd="108.226.162.112" dyno=web.1 connect=1ms service=5ms status=200 bytes=371
+2014-03-27T22:32:51.284103+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=c798187d-ca49-4e8f-8dbd-25bd92c79c24 fwd="108.226.162.112" dyno=web.1 connect=8ms service=580ms status=200 bytes=245
+2014-03-27T22:32:51.561764+00:00 app[web.1]: 10.120.211.149 - - [27/Mar/2014:22:32:50 +0000] "GET / HTTP/1.1" 200 58
+2014-03-27T22:32:56.047488+00:00 heroku[router]: at=info method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=643a3852-ca94-49d2-890d-c2d94080b53d fwd="108.226.162.112" dyno=web.1 connect=1ms service=542ms status=200 bytes=245
+2014-03-27T22:32:56.563950+00:00 app[web.1]: 10.228.29.18 - - [27/Mar/2014:22:32:55 +0000] "GET / HTTP/1.1" 200 58
+2014-03-27T22:43:51+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-27T22:43:55+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-27T22:43:56.115472+00:00 heroku[web.1]: State changed from up to starting
+2014-03-27T22:43:58.199080+00:00 heroku[web.1]: Starting process with command `sh boot.sh`
+2014-03-27T22:43:59.419377+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-27T22:43:55.699284+00:00 heroku[api]: Deploy 1e73324 by glennholt1@gmail.com
+2014-03-27T22:43:55.699356+00:00 heroku[api]: Release v17 created by glennholt1@gmail.com
+2014-03-27T22:44:01.271500+00:00 heroku[web.1]: Process exited with status 0
+2014-03-27T22:44:01.789331+00:00 app[web.1]: WARNING: channel "pear.php.net" has updated its protocols, use "pear channel-update pear.php.net" to update
+2014-03-27T22:44:02.693659+00:00 app[web.1]: pear/Mail can optionally use package "pear/Net_SMTP" (version >= 1.4.1)
+2014-03-27T22:44:02.886011+00:00 app[web.1]: downloading Mail-1.2.0.tar ...
+2014-03-27T22:44:02.886182+00:00 app[web.1]: Starting to download Mail-1.2.0.tar (Unknown size)
+2014-03-27T22:44:02.599310+00:00 app[web.1]: Did not download optional dependencies: pear/Net_SMTP, use --alldeps to download automatically
+2014-03-27T22:44:03.386263+00:00 app[web.1]: install ok: channel://pear.php.net/Mail-1.2.0
+2014-03-27T22:44:03.280806+00:00 app[web.1]: ..........................done: 119,296 bytes
+2014-03-27T22:44:03.686762+00:00 app[web.1]: WARNING: channel "pear.php.net" has updated its protocols, use "pear channel-update pear.php.net" to update
+2014-03-27T22:44:05.285815+00:00 app[web.1]: WARNING: "pear/Auth_SASL" is deprecated in favor of "pear/Auth_SASL2"
+2014-03-27T22:44:05.286289+00:00 app[web.1]: Did not download optional dependencies: pear/Auth_SASL, use --alldeps to download automatically
+2014-03-27T22:44:05.326580+00:00 app[web.1]: pear/Net_SMTP can optionally use package "pear/Auth_SASL" (version >= 1.0.5)
+2014-03-27T22:44:05.529822+00:00 app[web.1]: Starting to download Net_SMTP-1.6.2.tar (Unknown size)
+2014-03-27T22:44:05.529674+00:00 app[web.1]: downloading Net_SMTP-1.6.2.tar ...
+2014-03-27T22:44:05.835563+00:00 app[web.1]: ................done: 65,536 bytes
+2014-03-27T22:44:06.073348+00:00 app[web.1]: downloading Net_Socket-1.0.14.tar ...
+2014-03-27T22:44:06.073604+00:00 app[web.1]: Starting to download Net_Socket-1.0.14.tar (Unknown size)
+2014-03-27T22:44:06.226825+00:00 app[web.1]: ........done: 24,576 bytes
+2014-03-27T22:44:06.255575+00:00 app[web.1]: install ok: channel://pear.php.net/Net_Socket-1.0.14
+2014-03-27T22:44:06.286167+00:00 app[web.1]: install ok: channel://pear.php.net/Net_SMTP-1.6.2
+2014-03-27T22:44:06.311432+00:00 app[web.1]: Launching apache
+2014-03-27T22:44:07.250948+00:00 app[web.1]: [Thu Mar 27 22:44:06 2014] [notice] Apache/2.2.22 (Unix) PHP/5.3.10 configured -- resuming normal operations
+2014-03-27T22:44:06.691735+00:00 heroku[web.1]: State changed from starting to up
+2014-03-27T22:44:08.251098+00:00 app[web.1]: [Thu Mar 27 22:44:07 2014] [error] server reached MaxClients setting, consider raising the MaxClients setting
+2014-03-27T22:44:45.181581+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=tranquil-sierra-5030.herokuapp.com request_id=5f3894dd-69dc-4ffe-84e5-0f579f576672 fwd="108.226.162.112" dyno=web.1 connect=1ms service=30002ms status=503 bytes=0
