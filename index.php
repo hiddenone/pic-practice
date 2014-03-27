@@ -1,32 +1,31 @@
 <?php
-require_once('class.phpmailer.php');
-
-$mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->CharSet="UTF-8";
-$mail->SMTPSecure = 'tls';
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->Username = 'glennholt1@gmail.com';
-$mail->Password = 'valid password';
-$mail->SMTPAuth = true;
-
-$mail->From = 'glennholt1@gmail.com';
-$mail->FromName = 'Glenn Holt';
-$mail->AddAddress('glennholt1@gmail.com');
-$mail->AddReplyTo('glennholt1@gmail.com', 'Information');
-
-$mail->IsHTML(true);
-$mail->Subject    = "PHPMailer Test Subject via Sendmail, basic";
-$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!";
-$mail->Body    = "Hello";
-
-if(!$mail->Send())
-{
-  echo "Mailer Error: " . $mail->ErrorInfo;
-}
-else
-{
-  echo "Message sent!";
-}
-?>
+ require_once "Mail.php";
+ 
+ $from = "Sandra Sender <sender@example.com>";
+ $to = "Ramona Recipient <recipient@example.com>";
+ $subject = "Hi!";
+ $body = "Hi,\n\nHow are you?";
+ 
+ $host = "ssl://mail.example.com";
+ $port = "465";
+ $username = "glennholt1@gmail.com";
+ $password = "***REMOVED***";
+ 
+ $headers = array ('From' => $from,
+   'To' => $to,
+   'Subject' => $subject);
+ $smtp = Mail::factory('smtp',
+   array ('host' => $host,
+     'port' => $port,
+     'auth' => true,
+     'username' => $username,
+     'password' => $password));
+ 
+ $mail = $smtp->send($to, $headers, $body);
+ 
+ if (PEAR::isError($mail)) {
+   echo("<p>" . $mail->getMessage() . "</p>");
+  } else {
+   echo("<p>Message successfully sent!</p>");
+  }
+ ?>
