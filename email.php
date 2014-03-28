@@ -22,8 +22,8 @@ echo 'Thank you for your input.  We will get back to you ASAP. <a href="index.ht
  echo $msg;
  $host = "smtp.gmail.com";
  $port = "587";
- $username = "glennholt1@gmail.com";
- $password = "***REMOVED***";
+ $username = "YOUREMAIL@gmail.com";
+ $password = "YOURPASSWORD";
  
  
 
