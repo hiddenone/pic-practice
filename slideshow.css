@@ -1,0 +1,86 @@
+#deals, div.orbit-wrapper { 
+     position: absolute;
+     top: 30px;
+     left:5px;
+}
+
+/* CONTAINER     
+   ================================================== */
+div.orbit-wrapper {
+    width: 1px;
+    height: 1px;
+    position: relative;
+	}
+
+div.orbit {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    overflow: hidden }
+
+div.orbit img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+
+div.orbit a img {
+    border: none; }
+
+.orbit div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* DIRECTIONAL NAV
+   ================================================== */
+
+div.slider-nav {
+    display: block; }
+
+div.slider-nav span {
+    width: 35px;
+    height: 81px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 1000;
+    top: 69%;
+    margin-top: -55px;
+    cursor: pointer;
+}
+div.slider-nav span.right {
+    background: url(slideshow-images/right-arrow.png);
+    right: -6px; }
+
+div.slider-nav span.left {
+    background: url(slideshow-images/left-arrow.png);
+    left: 5px; }
+
+/* BULLET NAV
+   ================================================== */
+
+.orbit-bullets {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    bottom: -80px;
+    left: 47%;
+    margin-left: 0px;
+    padding: 0px; }
+
+.orbit-bullets li {
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url(slideshow-images/bullet.png) no-repeat 4px 0;
+    width: 13px;
+    height: 12px;
+    overflow: hidden; }
+
+.orbit-bullets li.active {
+    color: #222;
+    background-position: -8px 0; }
+
