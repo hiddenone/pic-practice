@@ -9,7 +9,7 @@
  $host = "smtp.gmail.com";
  $port = "587";
  $username = "glennholt1@gmail.com";
- $password = "***REMOVED***";
+ $password = "rudy07pooch";
  
  
 

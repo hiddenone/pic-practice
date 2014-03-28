@@ -9,7 +9,7 @@
  $host = "ssl://mail.example.com";
  $port = "465";
  $username = "glennholt1@gmail.com";
- $password = "***REMOVED***";
+ $password = "rudy07pooch";
  
  $headers = array ('From' => $from,
    'To' => $to,

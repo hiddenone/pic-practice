@@ -1,5 +1,16 @@
 <?php
 require_once "Mail.php";
+//heroku config:set PWXX=somevalue
+//heroku config:set UNXX=somevalue
+//heroku config:set UNXX2=somevalue
+//Then, access it from your code:
+
+$my_un = getenv('UNXX');
+$my_pw = getenv('PWXX');
+$my_un_to = getenv('UNXX2');
+
+
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
@@ -9,12 +20,16 @@ $msg = "Name: $name" .
 "Message: $message" .
 "Email: $email";
 $subject = 'A Customer Email';
-$to = 'michaelholt0604@gmail.com';
+$to = $my_un_to;
 //mail($to, $subject, $msg, 'From:' . $email);
 echo 'Thank you for your input.  We will get back to you ASAP. <a href="index.html">Go back to the home page</a>';
 
+
+
+
+
  
- $from = "The Sender <glennholt1@gmail.com>";
+ $from =   "The Sender <glennholt1@gmail.com>";
 //$to = "Receiver <glennholt1@gmail.com>";
 // $subject = "Hi!";
  $body = "Hi,\n\nHow are you?";
@@ -22,8 +37,8 @@ echo 'Thank you for your input.  We will get back to you ASAP. <a href="index.ht
  echo $msg;
  $host = "smtp.gmail.com";
  $port = "587";
- $username = "YOUREMAIL@gmail.com";
- $password = "YOURPASSWORD";
+ $username = $my_un;
+ $password = $my_pw;
  
  
 
